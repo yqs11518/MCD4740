@@ -1,0 +1,132 @@
+/*#qs_form{
+	height: auto;
+	width: auto;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}*/
+
+.form_mask{
+	postion: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	opacity: .6;
+	z-index: 999;
+	background-color: #000;
+}
+
+.form_content{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	border-radius: 25px;
+}
+
+#qs_form .form_content{
+	width: 600px;
+	height: 400px;
+	background-color: #fff;
+	text-align: center;
+}
+
+#qs_form .form_content .form_title{
+/*	padding-top: 10px;*/
+	height: 30px;
+	background-color: #72BF8A;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+
+#qs_form .close_btn{
+	position: absolute;
+	bottom: 20px;
+	right: 50%;
+}
+
+#qs_form .close_btn .btn_container{
+	background-color: #000;
+	color: #fff;
+}
+
+.booking_options .nameContainers,
+.booking_options .emailContainers{
+	position: absolute;
+}
+
+.booking_options .nameContainers{
+	top: 40px;
+}
+
+.booking_options .nameContainers1,
+.booking_options .emailContainers{
+	left: 70px;
+}
+
+.booking_options .nameContainers2{
+	right: 70px;
+}
+
+.booking_options .text{
+	position: absolute;
+	display: block;
+}
+
+.booking_options .emailContainers{
+	top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
