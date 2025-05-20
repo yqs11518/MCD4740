@@ -147,43 +147,84 @@
 	<!--                Booking Form                  -->
 	<!-- ============================================ -->
  
-	<div id="qs_form" style="display: block;">
+	<div id="qs_form">
 		<div class="form_mask"></div>
 		<div class="form_content" id="qs_content">
 			<div class="form_title">
 				Booking
 			</div>
 			<div class="booking_options">
-				<form action="" method="get">
-					<div class="nameContainers nameContainers1">
-						<span class="text nameText1">
-						First Name:
-						</span>
-						<br>
-						<input type="text" name="First Name" class="name_brack name_brack1">
-					</div>
-					<div class="nameContainers nameContainers2">
-						<span class="text nameText2">
-						Last Name:
-						</span>
-						<br>
-						<input type="text" name="Last Name" class="name_brack name_brack2">
-					</div>
-					<div class="emailContainers">
-						<span class="text emailText2">
-						email address:
-						</span>
-						<br>
-						<input type="text" name="email" class="name_brack name_brack2">
-					</div>
-					
+				<form action="" method="get" name="booking_form" id="form_container">
 
+					<div class="inputContainers nameContainers nameContainers1 leftMore">
+						<label for="FirstName" class="text nameText2">First Name:</label>
+						<br>
+						<input class="inpu_check" id="FirstName" type="text" name="FirstName"  alt="First Name" required>
+						<span class="warning_enter">Enter required!</span>
+					</div>
+
+					<div class="inputContainers nameContainers nameContainers2 rightContainer rightMore">
+						<label for="LastName"class="text nameText2">
+						Last Name:
+						</label>
+						<br>
+						<input class="inpu_check" id="LastName" type="text" name="LastName" alt="Last Name" required>
+						<span class="warning_enter">Enter required!</span>
+					</div>
+
+					<div class="inputContainers emailContainer leftMore">
+						<label for="EmailAddress"class="text emailText">
+							Email Address:
+						</label>
+						<br>
+						<input class="inpu_check" id="EmailAddress" type="text" name="Email" alt="Email Address" required>
+						<span class="warning_enter">Enter required!</span>
+					</div>
+
+					<div class="inputContainers phoneContainer rightContainer rightMore">
+						<label for="PhoneNumber"class="text phoneText">
+						Phone Number:
+						</label>
+						<br>
+						<input class="inpu_check" id="PhoneNumber" type="text" name="Phone" alt="Phone Number" required>
+						<span class="warning_enter">Enter required!</span>
+					</div>
+
+					<div class="inputContainers courseContainer rightMore">
+						<label for="Course"class="text CourseText">
+							Course:
+						</label>
+						<br>
+						<input class="inpu_check" id="Course" type="text" name="Course" alt="Courses" required>
+					</div>
+
+					<div class="inputContainers classContainer rightMore">
+						<label for="Class"class="text classText">
+							Class:
+						</label>
+						<br>
+						<input class="inpu_check" id="Class" type="text" name="Class" alt="Classes" required>
+					</div>
+
+					<div class="inputContainers teacherContainer rightMore">
+						<label for="Teacher"class="text teacherText">
+							Teacher:
+						</label>
+						<br>
+						<input class="inpu_check" id="Teacher" type="text" name="Teacher" alt="Teacher" required>
+					</div>
+
+					<!-- <div class="inputContainers">
+						
+					</div> -->
+
+					<div class="submit_contain">
+						<input type="submit" value="Submit" class="submit_btn" id="submit_btn">
+					</div>
 				</form>
 			</div>
-			<a class="close_btn" id="close_form">
-				<span class="btn_container">
-					Close
-				</span>
+			<a class="close_btn close_form" id="close_btn">
+				<img src="images/form/close.png" alt="">
 			</a>
 		</div>
 	</div>
@@ -343,7 +384,8 @@
 	        <!-- Logo Group -->
 	        <div class="cs-logo-group">
 	            <a aria-label="go back to home" class="cs-logo" href="">
-	                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="images/footer/logoFinal.png" alt="logo" width="178" height="32">
+	                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="images/footer/logoWhite.png" alt="logo" width="178" height="32">
+	                <!-- <h2 style="color:white; display:inline-block; text-height: 76px;text-align: center;">MINI GOLF HIRE</h2> -->
 	            </a>
 	            <p class="cs-text">
 	                We deliver premium portable mini golf experiences—perfect for events, parties, and team building, anywhere you need fun.

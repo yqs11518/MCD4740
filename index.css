@@ -1,10 +1,15 @@
-/*#qs_form{
-	height: auto;
-	width: auto;
-	padding: 0;
-	margin: 0;
-	border: 0;
-}*/
+#qs_form{
+	background-color: rgb(0, 0, 0, .6);
+	z-index: 9999;
+	justify-content: center;
+	align-content: center;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	display: block;
+}
 
 .form_mask{
 	postion: fixed;
@@ -20,86 +25,141 @@
 .form_content{
 	position: fixed;
 	left: 50%;
-	top: 50%;
+	top: 55%;
 	transform: translate(-50%, -50%);
 	z-index: 999;
 	border-radius: 25px;
 }
 
 #qs_form .form_content{
-	width: 600px;
-	height: 400px;
+	width: 650px;
+	height: 470px;
 	background-color: #fff;
 	text-align: center;
 }
 
 #qs_form .form_content .form_title{
-/*	padding-top: 10px;*/
-	height: 30px;
+	line-height: 60px;
+/*	height: 40px;*/
 	background-color: #72BF8A;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
+	font-weight: bold;
+	font-size: 24px;
 }
-
 
 #qs_form .close_btn{
 	position: absolute;
-	bottom: 20px;
-	right: 50%;
+	top: 15px;
+	right: 20px;
 }
 
-#qs_form .close_btn .btn_container{
-	background-color: #000;
-	color: #fff;
+
+#qs_form .close_btn img{
+	height: 30px;
+	width: 30px;
 }
 
-.booking_options .nameContainers,
-.booking_options .emailContainers{
+.booking_options .inputContainers{
 	position: absolute;
 }
 
 .booking_options .nameContainers{
-	top: 40px;
+	top: 75px;
 }
 
-.booking_options .nameContainers1,
-.booking_options .emailContainers{
-	left: 70px;
+.booking_options .emailContainer,
+.booking_options .phoneContainer{
+	top: 145px;
 }
 
-.booking_options .nameContainers2{
-	right: 70px;
+.booking_options .courseContainer{
+	top: 205px;
 }
 
+.booking_options .classContainer{
+	top: 265px;
+}
+
+.booking_options .teacherContainer{
+	top: 325px;
+}
+
+.booking_options .leftMore{
+	left: 100px;
+}
+
+.booking_options .courseContainer input,
+.booking_options .classContainer input,
+.booking_options .teacherContainer input{
+	width: 431px;
+}
+
+.booking_options .inputContainers input{
+	border-radius: 25px;
+	border-width: 3px;
+	height: 30px;
+}
+
+
+/* text around input */
 .booking_options .text{
 	position: absolute;
 	display: block;
 }
 
-.booking_options .emailContainers{
-	top: 100px;
+#qs_form .inputContainers>span{
+/*	height: 5px;*/
+	width: 80px;
+	display: none;
+	font-size: 10px;
+	color: red;
+	font-weight: bold;
 }
 
 
 
+/* submit button */
+#form_container .submit_contain{
+	position:absolute;
+	bottom: 0;
+	background-color: #72BF8A;
+	width: 650px;
+	height: 60px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+
+#form_container .submit_contain .submit_btn{
+	margin-top: 10px;
+	border-radius: 25px;
+	background-color: #72BF8A;
+	height: 40px;
+	width: 80px;
+}
+
+#form_container .submit_contain .submit_btn:hover{
+	background-color: #ff6a3e;
+	color: #fff;
+}
+
+
+#qs_form .close_btn img:hover,
+#form_container .submit_contain .submit_btn:hover,
+#hero-2274 .cs-button-solid:hover{
+	cursor: pointer;
+}
 
 
 
+.booking_options .rightMore{
+	right: 119px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.rightLess{
+	right: 35px;
+}
 
 
 

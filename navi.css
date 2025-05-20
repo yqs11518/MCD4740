@@ -574,7 +574,7 @@
     position: fixed;
     top: 2rem;
     left: 50%;
-    z-index: 10000;
+    z-index: 9998;
     transform: translateX(-50%);
     transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s;
   }
