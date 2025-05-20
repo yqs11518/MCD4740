@@ -34,9 +34,8 @@ document.getElementById('click_qs_btn').addEventListener('click', function () {;
 close.addEventListener('click', function () {
 	hideForm();
 });
-// cls.style.display = "block";
-// tea.style.display = 'block';
-// cor.style.display = 'block';
+
+
 cls.focus();
 tea.focus();
 cor.focus();
@@ -58,9 +57,6 @@ sub.addEventListener('click', function () {
 	}
 	if (num == ent.length){
 		hideForm();
-		/*form.addEventListener("submit", function(event){
-			event.preventDefault();
-		});*/
 	}
 
 	for(var i = 0; i < right.length; i++){
