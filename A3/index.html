@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Mini Golf" content="A great place to hire mini golf equipments and learn how to play">
+	<title>Mini Golf Hire</title>
+	<link rel="short icon" href="images/nav/icon.png" type="image/x-icon">
+	<meta name="robots" content='noindex, nofollow'>
+
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="navi.css">
+	<link rel="stylesheet" href="navCore.css">
+	<link rel="stylesheet" href="hero.css">
+	<link rel="stylesheet" href="heroCore.css">
+	<link rel="stylesheet" href="faq.css">
+	<link rel="stylesheet" href="faqCore.css">
+	<link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" href="footerCore.css">
+</head>
+<body>
+
+	<!-- ============================================ -->
+	<!--                 Navigation                   -->
+	<!-- ============================================ -->
+
+	<header id="cs-navigation">
+	    <div class="cs-container">
+	        <!--Nav Logo-->
+	        <!--Logo is turned white in the css with a filter on dark mode-->
+	        <a href="" class="cs-logo" aria-label="back to home">
+	            <img src="images/nav/logoFinal.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+	        </a>
+	        <!--Navigation List-->
+	        <nav class="cs-nav" role="navigation">
+	            <!--Mobile Nav Toggle-->
+	            <button class="cs-toggle" aria-label="mobile menu toggle">
+	                <div class="cs-box" aria-hidden="true">
+	                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+	                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+	                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+	                </div>
+	            </button>
+	            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+	            <div class="cs-ul-wrapper">
+	                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+	                    <li class="cs-li">
+	                        <a href="" class="cs-li-link cs-active">
+	                            Home
+	                        </a>
+	                    </li>
+	                    <li class="cs-li">
+	                        <a href="" class="cs-li-link">
+	                            About Us
+	                        </a>
+	                    </li>
+	                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+	                    <li class="cs-li cs-dropdown" tabindex="0">
+	                        <span class="cs-li-link">
+	                            Services
+	                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+	                        </span>
+	                        <ul class="cs-drop-ul">
+	                            <li class="cs-drop-li">
+	                                <a href="" class="cs-li-link cs-drop-link">Courses</a>
+	                            </li>
+	                            <li class="cs-drop-li">
+	                                <a href="" class="cs-li-link cs-drop-link">Classes</a>
+	                            </li>
+	                            <li class="cs-drop-li">
+	                                <a href="" class="cs-li-link cs-drop-link">Teachers</a>
+	                            </li>
+	                        </ul>
+	                    </li>
+	                    <li class="cs-li">
+	                        <a href="" class="cs-li-link">
+	                            Gallery
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </nav>
+	        <div class="cs-contact-group">
+	            <a href="tel:1300 137 967" class="cs-phone">
+	                <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
+	                1300 137 967
+	            </a>
+	            <div class="cs-social">
+	                <a href="" class="cs-social-link">
+	                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+	                </a>
+	                <a href="" class="cs-social-link">
+	                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+	                </a>
+	                <a href="" class="cs-social-link">
+	                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+	                </a>
+	                <a href="" class="cs-social-link">
+	                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+	                </a>
+	            </div>
+	        </div>
+	        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+	        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+	            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+	            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+	        </button> -->
+	    </div>
+	</header>
+
+
+	<!-- ============================================ -->
+	<!--                    Hero                      -->
+	<!-- ============================================ -->
+
+	<section id="hero-2274">
+	    <div class="cs-container">
+	        <div class="cs-content">
+	            <h1 class="cs-title">Bring the Fun to You with Mini Golf Hire!</h1>
+	            <p class="cs-text">
+	                Perfect for indoor or outdoor events — birthdays, weddings, school fairs, or corporate fun. Easy setup, all-ages entertainment, and portable courses delivered to you.
+	            </p>
+	            <a class="cs-button-solid" id="click_qs_btn">
+	                Book Now
+	                <img class="cs-button-arrow" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg" decoding="async" alt="arrow" width="20" height="20" aria-hidden="true">
+	            </a>
+	        </div>
+
+	        <picture class="cs-picture">
+	            <source media="(max-width: 600px)" srcset="images/heros/heroPersonOnly.png">
+	            <source media="(min-width: 601px)" srcset="images/heros/heroPersonOnly.png">
+	            <img aria-hidden="true" decoding="async" src="images/heros/heroPersonOnly.png" alt="construction worker" width="581" height="662">
+	        </picture>
+	    </div>
+	    <div class="cs-image-group">
+	        <!--Background Image-->
+	        <picture class="cs-background cs-background1">
+	            <source media="(max-width: 600px)" srcset="images/heros/heroMain.jpg">
+	            <source media="(min-width: 601px)" srcset="images/heros/heroMain.jpg">
+	            <img aria-hidden="true" decoding="async" src="images/heros/heroMain.jpg" alt="construction site" width="1290" height="684">
+	        </picture>
+	        
+	    </div>
+	</section>
+
+
+	<!-- ============================================ -->
+	<!--                Booking Form                  -->
+	<!-- ============================================ -->
+ 
+	<div id="qs_form">
+		<div class="form_mask"></div>
+		<div class="form_content" id="qs_content">
+			<div class="form_title">
+				Booking
+			</div>
+			<div class="booking_options">
+				<form action="" method="get" name="booking_form" id="form_container">
+
+					<div class="inputContainers nameContainers nameContainers1 leftMore">
+						<label for="FirstName" class="text nameText2">First Name:</label>
+						<br>
+						<input class="inpu_check" id="FirstName" type="text" name="FirstName"  alt="First Name" required>
+						<span class="warning_enter">Enter required!</span>
+					</div>
+
+					<div class="inputContainers nameContainers nameContainers2 rightContainer rightMore">
+						<label for="LastName"class="text nameText2">
+						Last Name:
+						</label>
+						<br>
+						<input class="inpu_check" id="LastName" type="text" name="LastName" alt="Last Name" required>
+						<span class="warning_enter">Enter required!</span>
+					</div>
+
+					<div class="inputContainers emailContainer leftMore">
+						<label for="EmailAddress"class="text emailText">
+							Email Address:
+						</label>
+						<br>
+						<input class="inpu_check" id="EmailAddress" type="text" name="Email" alt="Email Address" required>
+						<span class="warning_enter">Enter required!</span>
+					</div>
+
+					<div class="inputContainers phoneContainer rightContainer rightMore">
+						<label for="PhoneNumber"class="text phoneText">
+						Phone Number:
+						</label>
+						<br>
+						<input class="inpu_check" id="PhoneNumber" type="text" name="Phone" alt="Phone Number" required>
+						<span class="warning_enter">Enter required!</span>
+					</div>
+
+					<div class="inputContainers courseContainer rightMore">
+						<label for="Course"class="text CourseText">
+							Course:
+						</label>
+						<br>
+						<input class="inpu_check" id="Course" type="text" name="Course" alt="Courses" required>
+					</div>
+
+					<div class="inputContainers classContainer rightMore">
+						<label for="Class"class="text classText">
+							Class:
+						</label>
+						<br>
+						<input class="inpu_check" id="Class" type="text" name="Class" alt="Classes" required>
+					</div>
+
+					<div class="inputContainers teacherContainer rightMore">
+						<label for="Teacher"class="text teacherText">
+							Teacher:
+						</label>
+						<br>
+						<input class="inpu_check" id="Teacher" type="text" name="Teacher" alt="Teacher" required>
+					</div>
+
+					<!-- <div class="inputContainers">
+						
+					</div> -->
+
+					<div class="submit_contain">
+						<input type="submit" value="Submit" class="submit_btn" id="submit_btn">
+					</div>
+				</form>
+			</div>
+			<a class="close_btn close_form" id="close_btn">
+				<img src="images/form/close.png" alt="">
+			</a>
+		</div>
+	</div>
+
+
+	<!-- ============================================ -->
+	<!--                  Services                    -->
+	<!-- ============================================ -->
+
+	<section id="Hservices-2274">
+	    <div class="cs-container">
+	        <ul class="cs-card-group">
+	            <li class="cs-item">
+	                <a href="" class="cs-link">
+	                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction1.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+	                    <h2 class="cs-h2">The Ultimate Mini Golf Experience</h2>
+	                    <p class="cs-item-text">
+	                        Step into a world of fun and challenge with the ultimate mini golf experience—vibrant courses, creative obstacles, and excitement for all ages!
+	                    </p>
+	                </a>
+	            </li>
+	            <li class="cs-item">
+	                <a href="" class="cs-link">
+	                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction2.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+	                    <h2 class="cs-h2">High-Quality Mini Golf Equipment </h2>
+	                    <p class="cs-item-text">
+	                        We source high-quality, stylish mini golf gear from trusted suppliers — ensuring every setup is fun, durable, and event-ready.
+	                    </p>
+	                </a>
+	            </li>
+	            <li class="cs-item">
+	                <a href="" class="cs-link">
+	                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction3.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+	                    <h2 class="cs-h2">Experienced Teaching Team </h2>
+	                    <p class="cs-item-text">
+	                        Our team of qualified, passionate educators creates engaging, enjoyable learning experiences that inspire curiosity and a love for learning.
+	                    </p>
+	                </a>
+	            </li>
+	            <li class="cs-item">
+	                <a href="" class="cs-link">
+	                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction4.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+	                    <span class="cs-number">3K+</span>
+	                    <h2 class="cs-h2">Happy Customers</h2>
+	                    <p class="cs-item-text">
+	                        With more than 7 years of expertise we served our clients.
+	                    </p>
+	                    <span class="cs-fake-link">
+	                        Let's See More
+	                        <img class="cs-arrow" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-arrow-up.svg" decoding="async" alt="arrow" width="20" height="20" aria-hidden="true">
+	                    </span>
+	                    <picture class="cs-background">
+	                        <!-- <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction3.jpg">
+	                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction3.jpg">
+	                        <img aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction3.jpg" alt="construction site" width="630" height="684"> -->
+	                    </picture>
+	                </a>
+	            </li>
+	        </ul>
+	    </div>
+	</section>
+
+
+	<!-- ============================================ -->
+	<!--                     FAQ                      -->
+	<!-- ============================================ -->
+
+	<section id="faq-350">
+	    <div class="cs-container">
+	        <div class="cs-left">
+	            <!--Big Image-->
+	            <picture class="cs-picture cs-picture1" aria-hidden="true">
+	                <source media="(max-width: 600px)" srcset="images/faq/largest.jpg">
+	                <source media="(min-width: 601px)" srcset="images/faq/largest.jpg">
+	                <img loading="lazy" decoding="async" src="images/faq/largest.jpg" alt="cleaning supplies" width="672" height="672">
+	            </picture>
+	            <!--small Image-->
+	            <picture class="cs-picture cs-picture2" aria-hidden="true">
+	                <source media="(max-width: 600px)" srcset="images/faq/small.jpg">
+	                <source media="(min-width: 601px)" srcset="images/faq/small.jpg">
+	                <img loading="lazy" decoding="async" src="images/faq/small.jpg" width="300" height="300">
+	            </picture>
+	            <!--Medium Image-->
+	            <picture class="cs-picture cs-picture3" aria-hidden="true">
+	                <source media="(max-width: 600px)" srcset="images/faq/medium.jpg">
+	                <source media="(min-width: 601px)" srcset="images/faq/medium.jpg">
+	                <img loading="lazy" decoding="async" src="images/faq/medium.jpg" alt="cleaner" width="200" height="200">
+	            </picture>
+	        </div>
+	        <div class="cs-content">
+	            <span class="cs-topper">Asked questions</span>
+	            <h2 class="cs-title">Frequently Asked Questions</h2>
+	            <ul class="cs-faq-group">
+	                <!-- Active class added as default -->
+	                <li class="cs-faq-item active">
+	                    <button class="cs-button">
+	                        <span class="cs-button-text">
+	                            What is mini golf?
+	                        </span>
+	                    </button>
+	                    <p class="cs-item-p">
+	                        Mini golf, also known as miniature golf, is a smaller version of the traditional golf game. Players use a putter to hit a golf ball into a series of holes on a course filled with obstacles, such as ramps, tunnels, and themed decorations. It’s a fun and family-friendly activity suitable for all ages.
+	                    </p>
+	                </li>
+	                <li class="cs-faq-item">
+	                    <button class="cs-button">
+	                        <span class="cs-button-text">
+	                            Can I book a reservation in advance?
+	                        </span>
+	                    </button>
+	                    <p class="cs-item-p">
+	                        Yes, we offer online reservations for specific time slots, especially during busy hours or weekends. Booking in advance is recommended to ensure availability, particularly for large groups or special events.
+	                    </p>
+	                </li>
+	                <li class="cs-faq-item">
+	                    <button class="cs-button">
+	                        <span class="cs-button-text">
+	                            Where is your mini golf course located?
+	                        </span>
+	                    </button>
+	                    <p class="cs-item-p">
+	                        Please refer to the bottom right corner of this page for our location details.
+	                    </p>
+	                </li>
+	                <li class="cs-faq-item">
+	                    <button class="cs-button">
+	                        <span class="cs-button-text">
+	                            What happens if it rains?
+	                        </span>
+	                    </button>
+	                    <p class="cs-item-p">
+	                        Our courses are designed to be fun in all weather conditions. If the weather is unsuitable for outdoor play, we may offer rain checks or provide indoor activities. Please check our website or call ahead for weather updates. 
+	                    </p>
+	                </li>
+	                <li class="cs-faq-item">
+	                    <button class="cs-button">
+	                        <span class="cs-button-text">
+	                            How can I have one to one help online?
+	                        </span>
+	                    </button>
+	                    <p class="cs-item-p">
+	                        We offer personalized assistance through our online chat service, available 24/7.  Simply click on the online chat button at the bottom of the page to connect with one of our experts.  For more in-depth support, you can also schedule a one-on-one session with our team.
+	                    </p>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	</section>
+
+
+	<!-- ============================================ -->
+	<!--                   Footer                     -->
+	<!-- ============================================ -->
+
+	<footer id="cs-footer-308">
+	    <div class="cs-container">
+	        <!-- Logo Group -->
+	        <div class="cs-logo-group">
+	            <a aria-label="go back to home" class="cs-logo" href="">
+	                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="images/footer/logoWhite.png" alt="logo" width="178" height="32">
+	                <!-- <h2 style="color:white; display:inline-block; text-height: 76px;text-align: center;">MINI GOLF HIRE</h2> -->
+	            </a>
+	            <p class="cs-text">
+	                We deliver premium portable mini golf experiences—perfect for events, parties, and team building, anywhere you need fun.
+	            </p>
+	        </div>
+	        <!-- Links -->
+	        <ul class="cs-nav">
+	            <li class="cs-nav-li">
+	                <span class="cs-header">Categories</span>
+	            </li>
+	            <li class="cs-nav-li">
+	                <a class="cs-nav-link" href="">Courses</a>
+	            </li>
+	            <li class="cs-nav-li">
+	                <a class="cs-nav-link" href="">Classes</a>
+	            </li>
+	            <li class="cs-nav-li">
+	                <a class="cs-nav-link" href="">Teachers</a>
+	            </li>
+	        </ul>
+	        <ul class="cs-nav">
+	            <li class="cs-nav-li">
+	                <span class="cs-header">Help Center</span>
+	            </li>
+	            <li class="cs-nav-li">
+	                <a class="cs-nav-link" href="">About Us</a>
+	            </li>
+	            <li class="cs-nav-li">
+	                <a class="cs-nav-link" href="">Contact Us</a>
+	            </li>
+	            <li class="cs-nav-li">
+	                <a class="cs-nav-link" href="">Blog</a>
+	            </li>
+	            <li class="cs-nav-li">
+	                <a class="cs-nav-link" href="">Online Chat</a>
+	            </li>
+	        </ul>
+	        <!-- Contact Info -->
+	        <ul class="cs-nav">
+	            <li class="cs-nav-li">
+	                <span class="cs-header">Contact</span>
+	            </li>
+	            <li class="cs-nav-li">
+	                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-stroke.svg" alt="phone" width="24" height="24">
+	                <a class="cs-nav-link cs-phone" href="tel: 1300 137 967">1300 137 967</a>
+	            </li>
+	            <li class="cs-nav-li">
+	                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/email-stroke.svg" alt="email" width="24" height="24">
+	                <a class="cs-nav-link cs-email" href="qyan0049@student.monash.edu">qyan0049@student.monash.edu</a>
+	            </li>
+	            <li class="cs-nav-li">
+	                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-stroke.svg" alt="pin" width="24" height="24">
+	                <a class="cs-nav-link cs-address" href="" target="_blank" rel="noopener">
+	                    3 Hilson Cl,<br> Wantirna South, VIC 3152
+	                </a>
+	            </li>
+	        </ul>
+	    </div>
+	    <div class="cs-bottom">
+	        <span class="cs-copyright">© Copyright 2025 - <a class="cs-copyright-link" href="">Qingsheng Yang. All rights reserved.</a></span>
+	    </div>
+	</footer>
+
+	<script src="faq.js"></script>
+	<script src="nav.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
