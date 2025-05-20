@@ -14,6 +14,10 @@ const right = document.getElementsByClassName('rightContainer');
 const inpu = document.getElementsByClassName('inpu_check');
 const close = document.getElementById('close_btn');
 
+const cls = document.getElementById("Class");
+const tea = document.getElementById("Teacher");
+const cor = document.getElementById("Course");
+
 document.getElementById('click_qs_btn').addEventListener('click', function () {;
 	form.reset();
 	for(var i=0; i < ent.length; i++){
@@ -30,6 +34,13 @@ document.getElementById('click_qs_btn').addEventListener('click', function () {;
 close.addEventListener('click', function () {
 	hideForm();
 });
+// cls.style.display = "block";
+// tea.style.display = 'block';
+// cor.style.display = 'block';
+cls.focus();
+tea.focus();
+cor.focus();
+
 
 // change the enter required display or not and change the position to avoid big change
 sub.addEventListener('click', function () {
