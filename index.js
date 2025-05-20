@@ -14,9 +14,7 @@ const right = document.getElementsByClassName('rightContainer');
 const inpu = document.getElementsByClassName('inpu_check');
 const close = document.getElementById('close_btn');
 
-document.getElementById('click_qs_btn').addEventListener('click', function () {
-	// const inputs = form.querySelectorAll("input");
-	// inputs.forEach(input => input.value="");
+document.getElementById('click_qs_btn').addEventListener('click', function () {;
 	form.reset();
 	for(var i=0; i < ent.length; i++){
 			ent[i].style.display = 'none';
@@ -32,9 +30,6 @@ document.getElementById('click_qs_btn').addEventListener('click', function () {
 close.addEventListener('click', function () {
 	hideForm();
 });
-
-
-
 
 // change the enter required display or not and change the position to avoid big change
 sub.addEventListener('click', function () {
@@ -52,10 +47,11 @@ sub.addEventListener('click', function () {
 	}
 	if (num == ent.length){
 		hideForm();
-		form.addEventListener("submit", function(event){
+		/*form.addEventListener("submit", function(event){
 			event.preventDefault();
-		});
+		});*/
 	}
+
 	for(var i = 0; i < right.length; i++){
 		const value_input = right[i].querySelector("input");
 		if (value_input.value.trim() === ""){
